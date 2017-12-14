@@ -25,16 +25,16 @@
                     </div>
 
                     <div class="inputcontent">
-                        <input type="password" maxlength="2" id="1" onkeydown="return (event.keyCode!=13);"/><br />
+                        <input type="" maxlength="2" id="1" onkeydown="return (event.keyCode!=13);"/><br />
                     </div>
                     <div class="inputcontent">
-                        <input type="password" maxlength="2" id="2" onkeydown="return (event.keyCode!=13);"/><br />
+                        <input type="" maxlength="2" id="2" onkeydown="return (event.keyCode!=13);"/><br />
                     </div>
                     <div class="inputcontent">
-                        <input type="password" maxlength="2" id="3" onkeydown="return (event.keyCode!=13);"/><br />
+                        <input type="" maxlength="2" id="3" onkeydown="return (event.keyCode!=13);"/><br />
                     </div>
                     <div class="inputcontent">
-                        <input type="password" maxlength="2" id="4" onkeydown="return (event.keyCode!=13);"/><br />
+                        <input type="" maxlength="2" id="4" onkeydown="return (event.keyCode!=13);"/><br />
                     </div>
                 </div>
 
@@ -44,19 +44,36 @@
             </form>
         </div>
            <body>
-    <p id="ENDING_TEXT" font-size="5" style="color:red">SIGN IN TO SHOW INCOMING MESSAGE</p>
+    <p id="TEXT" font-size="5" style="color:red">SIGN IN TO SHOW INCOMING MESSAGE</p>
     </body>
 
        <script>
       function checkPassword(){
        if(document.getElementById('1').value == "AA"){
-        document.getElementById("ENDING_TEXT").innerHTML = "Dear John,<br>I have noticed on site 247 that we have gotten<br>another data breach. To secure that this message is<br>going to the right hands, please<br>send Mr. Gaston an email with the<br>following code, XV-Ceasar Chipher-25 . I hope<br>to see better security next time.<br>-M"
+       if(document.getElementById('2').value == "AA"){
+       if(document.getElementById('3').value == "AA"){
+       if(document.getElementById('4').value == "AA"){
+        document.getElementById("TEXT").innerHTML = "Dear John,<br>I have noticed on site 247 that we have gotten<br>another data breach. To secure that this message is<br>going to the right hands, please<br>send Mr. Gaston an email with the<br>following code, XV-Ceasar Chipher-25 . I hope<br>to see better security next time.<br>-M";
          } else {
          alert('-= INCORRECT PASSWORD =-');
-         
           return false;
         }
+         } else {
+         alert('-= INCORRECT PASSWORD =-');
+          return false;
+        }
+
+         } else {
+         alert('-= INCORRECT PASSWORD =-');
+          return false;
+        }
+
+         } else {
+         alert('-= INCORRECT PASSWORD =-');
        }
+          return false;
+        }
+
       </script>
 </center>
 
